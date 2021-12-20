@@ -6,81 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P&aacute;gina responsive</title>
     <Style>
-        body{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        * {
+            box-sizing: border-box;
         }
-        #foto{
-           
-            width: 100%;
-            object-fit: cover;
-            
-
-        }
-        #marco{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-            
+        #marco {
+            width: 1200px;
+            height: 800px;
+            display: block;
+          
         }
         @media screen and (orientation:portrait){
-            #fondo{
-                height: 100vh;
-                width: 100vw;
-                display: flex;
-            align-items: center;
-            justify-content: center;
-                
-            }
             #marco{
-                height: 800px;
                 width: 600px;
+                height: 900px;
+                display: block;
+            
             }
         }
-        @media screen and (orientation:landscape){
-            #fondo{
-                height:100vh;
-                width:100vw;
-                display: flex;
-            align-items: center;
-            justify-content: center;
-            }
-            #marco{
-                height: 800px;
-                width: 1200px;
-            }
+        #foto {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
 
         }
+        body{
+            background-color: rgb(82, 53, 27);
+            display: flex;
+            justify-content: center;   }
+            
 
     </Style>
 </head>
 <body>
-    <div id="fondo">
     <picture id="marco">
-        
-        <source media="(orientation: landscape) and (min-width:1920px)" srcset="Foto3edH.heic" type="image/heic"> 
-        <source media="(orientation: landscape) and (min-width:1920px)" srcset="Foto3edH.webp" type="image/webp"> 
-        <source media="(orientation: landscape) and (min-width:1920px)" srcset="Foto3edH.jpg" type="image/jpg"> 
+        <source media="(orientation: landscape) and (min-width:1920px)" srcset="Foto1HED.heic" type="image/heic"> 
+        <source media="(orientation: landscape) and (min-width:1920px)" srcset="Foto1HED.webp" type="image/webp"> 
+        <source media="(orientation: landscape) and (min-width:1920px)" srcset="Foto1HED.jpg" type="image/jpg"> 
 
-        <source media="(orientation: landscape) and (min-width:800px)" srcset="Foto4edH.heic" type="image/heic">
-        <source media="(orientation: landscape) and (min-width:800px)" srcset="Foto4edH.webp" type="image/webp">
-        <source media="(orientation: landscape) and (min-width:800px)" srcset="Foto4edH.jpg" type="image/jpg">
+        <source media="(orientation: landscape) and (min-width:800px)" srcset="Foto2HED.heic" type="image/heic">
+        <source media="(orientation: landscape) and (min-width:800px)" srcset="Foto2HED.webp" type="image/webp">
+        <source media="(orientation: landscape) and (min-width:800px)" srcset="Foto2HED.jpg" type="image/jpg">
 
-        <source media="(orientation: portrait) and (min-width:1200px)" srcset="Foto1ed.heic" type="image/heic"> 
-        <source media="(orientation: portrait) and (min-width:1200px)" srcset="Foto1ed.webp" type="image/webp"> 
-        <source media="(orientation: portrait) and (min-width:1200px)" srcset="Foto1ed.jpg" type="image/jpg"> 
+        <source media="(orientation: portrait) and (min-width:1200px)" srcset="Foto2VED.heic" type="image/heic"> 
+        <source media="(orientation: portrait) and (min-width:1200px)" srcset="Foto2VED.webp" type="image/webp"> 
+        <source media="(orientation: portrait) and (min-width:1200px)" srcset="Foto2VED.jpg" type="image/jpg"> 
 
-        <source media="(orientation: portrait) and (min-width:600px)" srcset="Foto2ed.heic" type="image/heic"> 
-        <source media="(orientation: portrait) and (min-width:600px)" srcset="Foto2ed.webp" type="image/webp"> 
-        <source media="(orientation: portrait) and (min-width:600px)" srcset="Foto2ed.jpg" type="image/jpg"> 
-
-        
-        <img id="Foto" src="Foto 3.jpg">
-       
-    
-
+        <source media="(orientation: portrait) and (min-width:600px)" srcset="Foto1VED.heic" type="image/heic"> 
+        <source media="(orientation: portrait) and (min-width:600px)" srcset="Foto1VED.webp" type="image/webp"> 
+        <source media="(orientation: portrait) and (min-width:600px)" srcset="Foto1VED.jpg" type="image/jpg"> 
+        <img id="foto" src="default.jpg">
     </picture>
 </div>
 </body>
